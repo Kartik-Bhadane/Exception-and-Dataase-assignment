@@ -1,10 +1,6 @@
 package com.assignment;
 
-class InvalidMarksException extends Exception {
-    public InvalidMarksException(String msg) {
-        super(msg);
-    }
-}
+
 
 class StudentMarks {
     static void saveMarks(int marks) throws InvalidMarksException {
@@ -21,4 +17,10 @@ class StudentMarks {
             System.out.println(e.getMessage());
         }
     }
+}//exception
+class InvalidMarksException extends Exception {
+    public InvalidMarksException(String msg) {
+        super(msg);
+    }
 }
+
